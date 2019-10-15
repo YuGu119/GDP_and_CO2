@@ -4,4 +4,3 @@ df = pd.read_csv('https://media.githubusercontent.com/media/nickeubank/MIDS_Data
 df = df[['Mortality rate, infant (per 1,000 live births)','GDP per capita (constant 2010 US$)','Country Name']]
 from plotnine import *
 figure1 = (ggplot(df, aes(x ='Mortality rate, infant (per 1,000 live births)', y='GDP per capita (constant 2010 US$)')) + geom_point(alpha=0.5))
-print(figure1)
